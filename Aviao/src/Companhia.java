@@ -5,6 +5,7 @@ public class Companhia {
 	int cnpj;
 	int endereco;
 	String numeroParaAtendimento;
+	Object[] avioes  = new Object[]{};
 	
 	
 	public void CadastrarAviao() {

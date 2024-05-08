@@ -3,12 +3,18 @@ public class Aviao {
 
 	int id;
 	String modelo;
-	Object[] pilotos = new Object[2];
+	Object[] array = {"Piloto", "Copiloto"};
+	
+	public void listarPilotos() {
+		for (Object elemento : array) {
+			System.out.println(elemento);
+		}
+	}
 	
 	
 	public void CadastrarPilotos(Piloto piloto, CoPiloto copiloto) {
-		this.pilotos[0] = piloto;
-		this.pilotos[1] = copiloto;
+		array[0] = piloto;
+		array[1] = copiloto;
 	}
 	
 	

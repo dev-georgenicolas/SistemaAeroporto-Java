@@ -33,12 +33,11 @@ public class Main {
 		a2.CadastrarPilotos(p2, cp2);
 		
 		
-		System.out.println(a1.modelo +"\n"+ a1.pilotos);
-		System.out.println(a2.modelo +"\n"+ a2.pilotos);
-		
-		
-		
+		System.out.println(a1.modelo);
+        a1.listarPilotos();
 
+        System.out.println(a2.modelo);
+        a2.listarPilotos();
 	}
 
 }

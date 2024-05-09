@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Aviao {
 	
@@ -6,66 +7,21 @@ public class Aviao {
 	public double peso;
 	public double velocidade;
 	public double comprimento;
-	
-	
-	public Aviao(String modelo, int assentos, double peso, double velocidade, double comprimento) {
-		super();
-		this.modelo = modelo;
-		this.assentos = assentos;
-		this.peso = peso;
-		this.velocidade = velocidade;
-		this.comprimento = comprimento;
-	}
 
-
-	public String getModelo() {
-		return modelo;
-	}
-
-
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
-
-
-	public int getAssentos() {
-		return assentos;
-	}
-
-
-	public void setAssentos(int assentos) {
-		this.assentos = assentos;
-	}
-
-
-	public double getPeso() {
-		return peso;
-	}
-
-
-	public void setPeso(double peso) {
-		this.peso = peso;
-	}
-
-
-	public double getVelocidade() {
-		return velocidade;
-	}
-
-
-	public void setVelocidade(double velocidade) {
-		this.velocidade = velocidade;
-	}
-
-
-	public double getComprimento() {
-		return comprimento;
-	}
-
-
-	public void setComprimento(double comprimento) {
-		this.comprimento = comprimento;
-	}
+	public void cadastrarAviao() {
+        	System.out.println("Digite o modelo do avião:");
+        	this.modelo = sc.nextLine();
+        	System.out.println("Digite a quantidade de assentos do avião:");
+        	this.assentos = sc.nextInt();
+		sc.nextLine();
+        	System.out.println("Digite o peso do avião:");
+        	this.peso = sc.nextDouble();
+        	System.out.println("Digite a velocidade do avião:");
+		this.velociade = sc.nextDouble();
+		System.out.println("Digite o comprimento do avião:");
+		this.comprimento = sc.nextDouble();
+       		System.out.println("Avião cadastrado com sucesso!");
+    }
 	
 	
 	

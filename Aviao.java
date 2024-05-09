@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Aviao {
-	
+	Scanner sc = new Scanner(System.in);
 	public String modelo;
 	public int assentos;
 	public double peso;
